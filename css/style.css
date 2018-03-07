@@ -1,0 +1,158 @@
+body{
+background-color: #EEDFAC;
+}
+
+/* Layout */
+.ba-container{
+	position: absolute;
+	width: 85vmin;
+	height: 85vmin;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: 5px solid #606060;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-checkers {
+	position: absolute;
+	width: 80vmin;
+	height: 80vmin;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: 5px solid #606060;
+}
+.ba-block-top{
+	position: absolute;
+	width: 100%;
+	height: 50%;
+}
+.ba-block-bot {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top:50%;
+
+}
+.ba-row {
+	position: absolute;
+	width: 100%;
+	height: 25%;
+}
+div[class*="ba-block"]>div:nth-child(2){
+	top:25%;
+}
+div[class*="ba-block"]>div:nth-child(3){
+	top:50%;
+}
+div[class*="ba-block"]>div:nth-child(4){
+	top:75%;
+}
+.ba-cell {
+	position: absolute;
+	width: 12.5%;
+	height: 100%;
+}
+div[class*="ba-row"]>div:nth-child(2) {
+	left:12.5%;
+}
+div[class*="ba-row"]>div:nth-child(3) {
+	left:25%;
+}
+div[class*="ba-row"]>div:nth-child(4) {
+	left:37.5%;
+}
+div[class*="ba-row"]>div:nth-child(5) {
+	left:50%;
+}
+div[class*="ba-row"]>div:nth-child(6) {
+	left:62.5%;
+}
+div[class*="ba-row"]>div:nth-child(7) {
+	left:75%;
+}
+div[class*="ba-row"]>div:nth-child(8) {
+	left:87.5%;
+}
+div[class*=ba-block]>div:nth-child(odd)>div:nth-child(odd){
+	background-color: #606060;
+}
+div[class*=ba-block]>div:nth-child(even)>div:nth-child(even){
+	background-color: #606060;
+}
+.ba-check{
+	position: absolute;
+	background-color: #E05757;
+	border-radius: 50%;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	margin: auto;
+	box-shadow: -0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+.ba-check-white {
+	background-color: #fff;
+}
+.ba-check:hover{
+	width: 100%;
+	height: 100%;
+}
+.ba-block-bot>div:nth-child(1)>div>div{
+	display: none;
+}
+.ba-block-top>div:nth-child(4)>div>div{
+	display: none;
+}
+div[class*=ba-block]>div:nth-child(even)>div:nth-child(odd)>div{
+	display: none;
+}
+div[class*=ba-block]>div:nth-child(odd)>div:nth-child(even)>div{
+	display: none;
+}
